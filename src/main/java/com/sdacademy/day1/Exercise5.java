@@ -27,7 +27,7 @@ public class Exercise5 {
         return 0;
     }
 
-    private class Point {
+    private static class Point {
         public double getX() {
             return x;
         }
