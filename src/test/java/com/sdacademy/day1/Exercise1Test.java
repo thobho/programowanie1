@@ -14,9 +14,10 @@ public class Exercise1Test {
         exercise1 = new Exercise1();
     }
 
-    @Test(expected = IllegalArgumentException.class)
-    public void power_shouldThrowExeption(){
-        exercise1.factorial(0);
+    @Test
+    public void factoroial_shouldThrowExeption(){
+        int actual = exercise1.factorial(0);
+        assertEquals(1, actual);
     }
 
     @Test

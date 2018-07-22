@@ -6,7 +6,17 @@ Dla chętnych: napisz program konsolowy, który z konsoli przyjmuje liczby podan
  */
 public class Exercise2 {
     int gcd(int a, int b) {
-        return 0;
+
+        if(a<0 || b<0){
+            throw new IllegalArgumentException();
+        }
+
+        while (b!=0){
+            int t = b;
+            b = a % b;
+            a = t;
+        }
+        return a;
     }
 
     public static void main(String[] args) {

@@ -10,7 +10,16 @@ Zaimplementuj funckję bigFactorial, tak by zwracała silnię podanje liczby ca�
 public class Exercise1 {
 
     int factorial(int input) {
-        return 0;
+
+        if(input<0){
+            throw new IllegalArgumentException();
+        }
+
+        if(input == 0){
+            return 1;
+        } else {
+            return input * factorial(input -1);
+        }
     }
 
     BigInteger bigFactorial(BigInteger bigInteger){
@@ -18,7 +27,7 @@ public class Exercise1 {
     }
 
     public static void main(String[] args) {
-//        Exercise1 exercise1Instace = new Exercise1();
-//        System.out.println(exercise1Instace.factorial(2));
+        Exercise1 exercise1Instace = new Exercise1();
+        System.out.println(exercise1Instace.factorial(10));
     }
 }

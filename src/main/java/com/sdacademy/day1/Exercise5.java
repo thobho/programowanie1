@@ -12,19 +12,34 @@ Dobra wizualiza jest przedstawiona na tej stronie. https://academo.org/demos/est
 public class Exercise5 {
 
     private static double R = 100;
-    private int samples = 100000000;
+    private static int samples = 10000000;
     private Random random = new Random();
 
-    public Point crateRandomPoint() {
+    private Point crateRandomPoint() {
         return new Point(random.nextDouble() * 2 * R - R, random.nextDouble() * 2 * R - R);
     }
 
     public double distance(Point a, Point b) {
-        return 0;
+
+        double x = a.getX() - b.getX();
+        double y = a.getY() - b.getY();
+
+        return Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
     }
 
     double calculatePi() {
-        return 0;
+        double hit = 0;
+
+        Point zeroPoint = new Point(0, 0);
+
+        for (int i = 0; i < samples; i++) {
+            Point randomPoint = crateRandomPoint();
+            if (distance(randomPoint, zeroPoint) < R) {
+                hit++;
+            }
+
+        }
+        return 4 * hit / samples;
     }
 
     private static class Point {
@@ -37,7 +52,6 @@ public class Exercise5 {
         }
 
         public Point(double x, double y) {
-
             this.x = x;
             this.y = y;
         }
