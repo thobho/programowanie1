@@ -6,9 +6,7 @@ Dla chętnych: napisz program konsolowy, który z konsoli przyjmuje liczby podan
  */
 public class Exercise2 {
     int gcd(int a, int b) {
-        if(b==0) {return a;} else {
-            return gcd(b,a%b);
-        }
+        return 0;
     }
 
     public static void main(String[] args) {

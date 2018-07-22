@@ -1,0 +1,12 @@
+1. Prosze napisać program konsolowy, który będzie wyświetlał na konsoli liczbę nominałów banknotów i monet w jakich można
+wydać zadaną kwotę. Na przykład dla danych wejściowych 148 zł program powinien wyświetlić:
+
+1x100zł
+2x20zł
+1x5zł
+1x2zł
+1x1zł
+
+Do zaimplementowania metody użyj algorytmu zachłannego: https://www.wikiwand.com/pl/Problem_wydawania_reszty#/Algorytm_zachłanny
+
+2. Zaimplementuj metodę sortowania bąbelkowego dla list obiektów, które implementują interfejs Comparable.

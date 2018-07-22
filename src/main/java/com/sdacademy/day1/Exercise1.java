@@ -5,7 +5,7 @@ import java.math.BigInteger;
 /*
 Zaimplementuj metodę factorial tak by zwracała silnie liczby całkowitej.
 Dla liczb mniejszych od 1 metoda powinna rzucić wyjątek IllegalArgumentException
-Zaimplementuj funckję bigPower, tak by zwracała silnię podanje liczby całkowiter. Napisz odpowiednie test(dla chętnych).
+Zaimplementuj funckję bigFactorial, tak by zwracała silnię podanje liczby całkowiter. Napisz odpowiednie test(dla chętnych).
  */
 public class Exercise1 {
 
@@ -13,7 +13,7 @@ public class Exercise1 {
         return 0;
     }
 
-    BigInteger bigPower(BigInteger bigInteger){
+    BigInteger bigFactorial(BigInteger bigInteger){
         return new BigInteger("1");
     }
 
