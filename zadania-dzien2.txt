@@ -1,0 +1,58 @@
+﻿﻿Powtórka
+
+0.a. Dla każdego typu prostego zadeklaruj i zainicjuj tablice, następnie spróbuj nie przypisując wartości wydrukować któryś z elementów tablicy. Co zauważasz?
+0.b. Zadeklaruj i zainicjalizuj tablicę typu int i każdemu z jej elementów spróbuj przypisać losową wartość.
+0.c. Zadeklaruj i zainicjalizuj tablicę parzyste typu int. Każdemu kolejnemu elementowi przypisz kolejną parzystą liczbę zaczynając od 0.
+0.d. Zadeklaruj i zainicjalizuj tablicę nieParzyste typu int. Każdemu kolejnemu elementowi przypisz kolejną nieparzystą liczbę zaczynając od 1.
+0.e. Spróbuj obsłużyć wyjątek, który będzie zgłaszany przez aplikacje, gdy będziesz odwoływać się do elementu spoza zakresu tablicy.
+
+
+1. Napiszmy metodę, która wypisze co drugi element tablicy przekazanej jako parametr.
+2. Napiszmy metodę, która zadziała podobnie jak metoda z zadania poprzedniego, z tymże dodatkowo przyjmie parametr,
+    który będzie decydował o tym, czy chcemy wypisywać elementy na pozycjach parzystych, czy nieparzystych.
+3. Tworzymy klasę Runner, która będzie miała pola distance oraz speed.
+    Konstruktor ustawi wartość pola distance na 0, a speed zgodnie z przekazanym parametrem.
+    Klasa będzie miała metodę run, która przyjmie za parametr liczbę sekund, a która powiększy dystans zgodnie z jego prędkością.
+    Do tego będziemy mieli metodę getDistance, która posłuży do tego, żeby sprawdzić ile biegacz przebiegł.
+4. Piszemy metodę, która przyjmie za parametr listę stringów, a która zwróci listę zawierającą dwa najdłuższe stringi z tej listy.
+5. Piszemy metodę działającą podobnie, jak metoda z zadania poprzedniego, z tymże będzie dodatkowo przyjmowała parametr,
+    decydujący o tym, ile najdłuższych stringów z listy chcemy wybrać.
+6. Piszemy metodę reverseArray, która zwróci tablicę, która będzie wynikiem odwrócenia kolejności elementów tablicy,
+    która jest przekazana jako parametr.
+7.  Zaimplementuj algorytm, który odszukuje, na której pozycji w tablicy znajduje się dana liczba.
+    Wyznacz jego klasę złożoności, zastanów się ile wynosi złożoność optymistyczna, pesymistyczna i średnia.
+    W jaki sposób można zoptymalizować Twój algorytm żeby działał 2x szybciej?
+------------------------------------------------------------------------------------------------------------------------
+
+Listy
+
+1.Zapimlementuj metody listy wiązanej. (day2.exercises.exercise1.Main)
+2.Mając daną listę napisz metodę, która usuwa wszystkie elementy, które są równe zadanemu (elem) (day2.exercises.exercise1.Main)
+3.Sprawdź czy lista (z pakietu java.util) jest palidromem. Pamiętaj! LinkedList to lista wiązana w obu kierunkach. Pamiętaj, że możesz wykorzystać iteratory.
+4.Sprawdź, czy podana lista jest palidromem. Pamiętaj! Twoja lista jest wiązana w jednym kierunku.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Obiektowość
+
+1. Zamodeluj strukturę obiektów, dla programu, który zajmuje się zarządzaniem zasobami sklepu internetowego. Zastanów się, jak proces
+zakupu, wystawieniu przedmiotu przez sprzedającego wyglądają w rzeczywistości.. Pamiętaj o relacjach dziedziczenia
+oraz o kompozycji.
+
+Obiekty, które na pewno przydadzą Ci się podczas implementacji to:
+    0.Człowiek
+    1.Klient
+    2.Sprzedawca
+    3.Produkt
+    4.Koszyk
+    5.Zamówienie
+    ...oraz inne, które uznasz za stosowne
+
+------------------------------------------------------------------------------------------------------------------------
+
+Stosy
+
+1. Stworzyć implementację interfejsu Stack w taki sposób, abyśmy w klasie mieli jedno pole typu StackElement o nazwie peek.
+2. Stworzyć implementację interfejsu Queue w taki sposób, abyśmy w klasie mieli dwa pola typu QueueElement o nazwach head i tail (reprezentujące czoło oraz koniec kolejki).
+3. Stworzyć implementację interfejsu Queue w taki sposób, abyśmy mieli jedno pole o nazwie head typu QueueElement.
+-----------------------------------------------------------------------------------------------------------------------

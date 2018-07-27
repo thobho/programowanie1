@@ -1,4 +1,6 @@
 package com.sdacademy.day3.lambdas;
 
-public class MyFunctionalInterface {
+@FunctionalInterface
+public interface MyFunctionalInterface {
+    String method(int input);
 }

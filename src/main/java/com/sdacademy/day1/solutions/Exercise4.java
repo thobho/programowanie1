@@ -55,7 +55,7 @@ public class Exercise4 {
             // previous iteration.
             swapped = false;
 
-            // loop from bottom to top same as
+            // loop from bottom to peek same as
             // the bubble sort
             for (int i = start; i < end - 1; ++i) {
                 if (a[i] > a[i + 1]) {
@@ -78,7 +78,7 @@ public class Exercise4 {
             // item at the end is in its rightful spot
             end = end - 1;
 
-            // from top to bottom, doing the
+            // from peek to bottom, doing the
             // same comparison as in the previous stage
             for (int i = end - 1; i >= start; i--) {
                 if (a[i] > a[i + 1]) {

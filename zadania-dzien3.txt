@@ -1,0 +1,18 @@
+Zadania do domu:
+   1. Kalkulator wykonujący następujące działania:
+	a) dodawanie
+	b) odejmowanie
+	c) mnożenie
+	d) dzielenie
+	e) potęgowanie
+	f) pierwiastkowanie
+Uwzględnijcie proszę wszystkie możliwości i wyjątki (dzielenie przez zero, liczba ujemnna w wykładniku potęgi, pierwiastek liczby ujemnej)
+
+   2. Obliczanie pól figur geometrycznych:
+	a) kwadratu
+	b) prostokąta
+	c) równoległoboku
+	d) trapezu
+	e) trójkąta
+	f) rombu
+Jak wyżej - uwzględnienie możliwości popełnienia błędu przez użytkownika
