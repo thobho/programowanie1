@@ -16,6 +16,15 @@ Zbiory
 
 Mapy
 
+0.W klasie com.sdacademy.day3.exercise.Exercise1 znajsziesz przykładową mapę. Zaimplementuj metody, które znajdą w tej mapie i wyświetlą:
+    -> Zwierzęta wszystkich pełnoletnich właścicieli.
+    -> Niebezpieczne zwierzęta młodsze niż 6.
+    -> Właścicieli, którzy mają tylko jedno zwierze.
+    -> Właściciela, który ma najwięcej zwierząt.
+    -> Sumę wag wszystkich zwierząt, które nie są niebezpieczne
+    -> Najciężejsz niebezpieczne zwierzę i jego właściciela.
+    -> Proporcję niebezpiecznych zwierząt do bezpiecznych.
+
 1. Zapimlementuj program (konsolowy lub graficzny) o nazwie Książka telefoniczna. W którym użytkownik będzie mógł:
     a) dodać nowy kontakt
     b) usunąć kontakt,
@@ -31,9 +40,9 @@ Zadania do domu:
 	b) odejmowanie
 	c) mnożenie
 	d) dzielenie
-	e) potęgowanie
-	f) pierwiastkowanie
+
 Uwzględnijcie proszę wszystkie możliwości i wyjątki (dzielenie przez zero, liczba ujemnna w wykładniku potęgi, pierwiastek liczby ujemnej)
+Zastanów sie, czy da się tu wykorzystać interfejsy funkcyjne. Jak zaimplementowałbyś funkcję, która wyświetla n ostatnich operacji użytkownika?
 
    2. Obliczanie pól figur geometrycznych:
 	a) kwadratu

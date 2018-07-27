@@ -56,3 +56,8 @@ Stosy
 2. Stworzyć implementację interfejsu Queue w taki sposób, abyśmy w klasie mieli dwa pola typu QueueElement o nazwach head i tail (reprezentujące czoło oraz koniec kolejki).
 3. Stworzyć implementację interfejsu Queue w taki sposób, abyśmy mieli jedno pole o nazwie head typu QueueElement.
 -----------------------------------------------------------------------------------------------------------------------
+
+Kolejki
+
+1. (Algorytm na slajdach) Napisz metodę, która jako parametry przyjmuje liczbę dziesiętną oraz podstawę systemu pozycyjnego,
+a następnie zwraca w formie tekstowej zapis liczby w wybranym systemie.
