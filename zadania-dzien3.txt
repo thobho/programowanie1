@@ -1,3 +1,30 @@
+Wyrażenia lambda i interfejsy funkcyne
+
+0.Napisz swój własny interfejs funkcyjny, który będzie posiadał funkcję, która przyjmuje dwa parametry typu String oraz
+    zwraca typ String
+1.Napisz metdę o nazwie concatenateStrings, która będzie przyjmować 2 parametry typu string oraz trzeci parametr, którym będzie typ Twojego interfejsu
+2.Napisz kilka implementacji twojego interfejsu funkcyjnego w postaci wytażeń lambda, które łączą stringi na różne sposoby.
+------------------------------------------------------------------------------------------------------------------------
+
+Zbiory
+
+1. Napisz trzy metody, których parametrami są dwa zbiory (java.util.Set) natomiast wartościami zwracanymi są:
+    a) suma zbiorów
+    b) iloczyn zbiorów
+    c) różnica zbiorów
+------------------------------------------------------------------------------------------------------------------------
+
+Mapy
+
+1. Zapimlementuj program (konsolowy lub graficzny) o nazwie Książka telefoniczna. W którym użytkownik będzie mógł:
+    a) dodać nowy kontakt
+    b) usunąć kontakt,
+    c) wyszukiwać kontatky po fragmencie nazwy
+    d) wyświetlić wszystkie kontakty
+
+    Dane mają być zapisane w pliku.
+
+------------------------------------------------------------------------------------------------------------------------
 Zadania do domu:
    1. Kalkulator wykonujący następujące działania:
 	a) dodawanie
