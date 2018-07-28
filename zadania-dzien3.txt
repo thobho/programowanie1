@@ -8,10 +8,13 @@ Wyrażenia lambda i interfejsy funkcyne
 
 Zbiory
 
-1. Napisz trzy metody, których parametrami są dwa zbiory (java.util.Set) natomiast wartościami zwracanymi są:
+1. Napisz trzy metody, których parametrami są dwa zbiory A oraz B(java.util.Set) natomiast wartościami zwracanymi są:
     a) suma zbiorów
     b) iloczyn zbiorów
     c) różnica zbiorów
+    d) różnica symetryczna
+    d) boolean, który określa, czy A jest podzbiorem B
+
 ------------------------------------------------------------------------------------------------------------------------
 
 Mapy
@@ -25,7 +28,11 @@ Mapy
     -> Najciężejsz niebezpieczne zwierzę i jego właściciela.
     -> Proporcję niebezpiecznych zwierząt do bezpiecznych.
 
-1. Zapimlementuj program (konsolowy lub graficzny) o nazwie Książka telefoniczna. W którym użytkownik będzie mógł:
+1. Napisz funkcję, która jako parametry przyjmuje dwie mapy, typu Map<Integer, List<String>> Wartością zwaraną przez funkcję jest mapa, która zawiera encje
+z obu zadanych map. Jeżlil klucz się powtarza, to w mapie wynikowej wartością zasocjowaną ze zduplikowanym kluczem ma być konkatenacja list
+spod zduplikowanych kluczy.
+
+2. Zapimlementuj program (konsolowy lub graficzny) o nazwie Książka telefoniczna. W którym użytkownik będzie mógł:
     a) dodać nowy kontakt
     b) usunąć kontakt,
     c) wyszukiwać kontatky po fragmencie nazwy
@@ -33,7 +40,15 @@ Mapy
 
     Dane mają być zapisane w pliku.
 
+
 ------------------------------------------------------------------------------------------------------------------------
+Drzewa
+
+0. Zastanów się jak w najprostszy sposób zaimplementować drzewo binarne (podpowiedź: jak jest zapimlementowana lista
+wiązana ?).
+Jak sprawdzić jaka jest maksymalna głębokość drzewa?
+
+-----------------------------------------------------------------------------------------------------------------------
 Zadania do domu:
    1. Kalkulator wykonujący następujące działania:
 	a) dodawanie

@@ -2,6 +2,8 @@ package com.sdacademy.day3.guitutorial;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Main {
 
@@ -18,7 +20,15 @@ public class Main {
 
         //3. Create components and put them in the frame.
         //...create emptyLabel...
-        frame.getContentPane().add(new Label("Hello GUI"), BorderLayout.CENTER);
+        Button clickMeButton = new Button("Click me");
+        clickMeButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("Clicked");
+            }
+        });
+        frame.getContentPane().add(clickMeButton);
+
 
         //4. Size the frame.
         frame.pack();
