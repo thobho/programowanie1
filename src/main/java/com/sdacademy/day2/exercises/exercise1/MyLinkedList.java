@@ -5,7 +5,7 @@ public class MyLinkedList<T> {
     private int size;
 
     public MyLinkedList() {
-        this.head = null;
+
     }
 
     public MyLinkedList(T newElement) {
@@ -27,12 +27,40 @@ public class MyLinkedList<T> {
         size++;
     }
 
-    public void push(T element) {
-        //dodwanie nowego elementu na początku listy
+    public void push(T newElement) {
+        if (head == null) {
+            head = new Node<>(newElement, null);
+            size++;
+            return;
+        }
+        head = new Node<>(newElement, head);
+        size++;
     }
 
-    public void remove(T element) {
-        //usuwanie elementu, jeżeli istnieje w liście
+    public void remove(T toRemove) {
+
+        if (head == null){
+            return;
+        }
+
+        if (toRemove.equals(head.getValue())) {
+            head = head.getNext();
+            size--;
+            return;
+        }
+
+        Node<T> actual = head;
+
+        while (actual.hasNext() ) {
+            if(actual.getNext().getValue().equals(toRemove)){
+                Node<T> nextNext = actual.getNext().getNext();
+                actual.setNext(nextNext);
+                size--;
+                return;
+            }
+            actual = actual.getNext();
+
+        }
     }
 
     public void remove(int index) {

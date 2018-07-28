@@ -1,5 +1,7 @@
 package com.sdacademy.day1;
 
+import com.sdacademy.day2.animals.Animal;
+
 import java.math.BigInteger;
 
 /*
@@ -10,7 +12,6 @@ Zaimplementuj funckję bigFactorial, tak by zwracała silnię podanje liczby ca�
 public class Exercise1 {
 
     int factorial(int input) {
-
         if(input<0){
             throw new IllegalArgumentException();
         }

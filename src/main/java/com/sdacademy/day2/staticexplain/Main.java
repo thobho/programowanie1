@@ -8,15 +8,16 @@ public class Main {
         Parent p2 = new Child();
         Child c = new Child();
 
-        p1.staticMethod();
+        Parent.staticMethod();
         p1.instanceMethod();
 
         System.out.println("\n");
-        p2.staticMethod();
+
+        Parent.staticMethod();
         p2.instanceMethod();
 
         System.out.println("\n");
-        c.staticMethod();
+        Child.staticMethod();
         c.instanceMethod();
 
 

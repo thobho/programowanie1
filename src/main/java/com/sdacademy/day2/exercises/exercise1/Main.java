@@ -8,10 +8,15 @@ około 2h
  */
 public class Main {
     public static void main(String[] args) {
-        MyLinkedList<Integer> list = new MyLinkedList<>();
-        list.add(12);
-        list.add(231);
-        list.add(4324);
+        MyLinkedList<String> list = new MyLinkedList<>();
+        list.add("a");
+        list.add("b");
+        list.add("c");
+
+
+        list.remove("c");
+
+        System.out.println(list);
     }
 
 

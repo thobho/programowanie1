@@ -35,9 +35,9 @@ Listy
 
 Obiektowość
 
-1. Zamodeluj strukturę obiektów, dla programu, który zajmuje się zarządzaniem zasobami sklepu internetowego. Zastanów się, jak proces
-zakupu, wystawieniu przedmiotu przez sprzedającego wyglądają w rzeczywistości.. Pamiętaj o relacjach dziedziczenia
-oraz o kompozycji.
+1. Zamodeluj strukturę obiektów, dla programu, który zajmuje się zarządzaniem zasobami sklepu internetowego.
+Zastanów się, jak wyglądają procesy zakupu, wystawieniu przedmiotu na aukcję przez sprzedającego.
+Pamiętaj o relacjach dziedziczenia oraz o kompozycji.
 
 Obiekty, które na pewno przydadzą Ci się podczas implementacji to:
     0.Człowiek
@@ -52,12 +52,13 @@ Obiekty, które na pewno przydadzą Ci się podczas implementacji to:
 
 Stosy
 
+0. (Algorytm na slajdach) Napisz metodę, która jako parametry przyjmuje liczbę dziesiętną oraz podstawę systemu pozycyjnego,
+a następnie zwraca w formie tekstowej zapis liczby w wybranym systemie.
+
 1. Stworzyć implementację interfejsu Stack w taki sposób, abyśmy w klasie mieli jedno pole typu StackElement o nazwie peek.
 2. Stworzyć implementację interfejsu Queue w taki sposób, abyśmy w klasie mieli dwa pola typu QueueElement o nazwach head i tail (reprezentujące czoło oraz koniec kolejki).
 3. Stworzyć implementację interfejsu Queue w taki sposób, abyśmy mieli jedno pole o nazwie head typu QueueElement.
 -----------------------------------------------------------------------------------------------------------------------
 
-Kolejki
 
-1. (Algorytm na slajdach) Napisz metodę, która jako parametry przyjmuje liczbę dziesiętną oraz podstawę systemu pozycyjnego,
-a następnie zwraca w formie tekstowej zapis liczby w wybranym systemie.
+
