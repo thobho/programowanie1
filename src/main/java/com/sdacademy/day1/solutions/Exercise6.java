@@ -19,7 +19,7 @@ public class Exercise6 {
         towerOfHanoi(n-1, aux_rod, to_rod, from_rod);
     }
 
-    //  Driver method
+    //  Driver change
     public static void main(String args[])
     {
         int n= 24; // Number of disks

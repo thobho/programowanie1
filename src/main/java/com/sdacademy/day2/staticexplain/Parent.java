@@ -6,11 +6,11 @@ public class Parent {
     private String instanceVariable = "Instance variable from parent";
 
     public static void staticMethod(){
-        System.out.println("Static method from parent");
+        System.out.println("Static change from parent");
     }
 
     public void instanceMethod(){
-        System.out.println("Instance method from parent");
+        System.out.println("Instance change from parent");
     }
 
 }
