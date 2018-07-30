@@ -1,0 +1,58 @@
+1. Napisz metorę, która jako parametr przyjmuje liczbę całkowitą N, a zwraca tablicę o długości N wypełnioną liczbami losowymi.
+Skorzystaj z klasy Random.
+https://docs.oracle.com/javase/8/docs/api/java/util/Random.html
+========================================================================================================================
+
+2. Napisz funkcję, która jako argument przyjmuje tablicę liczb, a zwraca wartość średnią z wszystkich liczb.
+Sygnatura funkcji powinna wyglądać mniej więcej tak:
+static void double average(double[] inputArray)
+========================================================================================================================
+
+3. Napisz funkcję, która przyjmuje dowolną kolekcję obiektów klasy Double i zwraca wartość maksymalną i minimalną tej kolekcji.
+Aby zwrócić 2 wartości z funkcji możesz zwrócić je w formie tablicy dwuelementowej lub napisać własną klasę reprezentującą
+parę o nazwie Pair.
+========================================================================================================================
+
+4. Klasę StackArray, która będzie symulowac działanie stosu. Elementy stosu niech będą przetrzymywane w tablicy.
+Załóżmy, że stos ma określoną maksymalną liczbę elementów. Jeżli stos jest pełny, to dodanie kolejnego elementu powoduje
+usunięcie elementu, który zajduje się na samym "spodzie" stosu. Jest to tak zwany "stos tonący".
+
+
+Przykład: Załóżmy, że maksymalna wysokość stosu wynosi 4. D tego stosu dodajemy koolejne liczby naturalne od 0 do 6,
+a następnie ściągamy je wszystkie.
+
+("spód stosu jest po lewej stronie")
+
+STOS ->
+STOS -> 1
+STOS -> 1,2
+STOS -> 1,2,3
+STOS -> 1,2,3,4
+STOS -> 2,3,4,5
+STOS -> 3,4,5,6
+STOS -> 3,4,5
+STOS -> 3,4
+STOS -> 3
+STOS ->
+
+
+Podstawę do wykonania tego zadania znajdziesz w: com.sdacademy.day2.exerises.exercise2.
+Zaimlementuj metody interfejsu Stack. Stwórz wygodne konstruktory klasy StackArray.
+========================================================================================================================
+
+5. Napisz metody, których parametrami są dwa zbiory A oraz B(java.util.Set) natomiast wartościami zwracanymi są:
+      a) suma zbiorów
+      b) iloczyn zbiorów
+      c) różnica zbiorów
+      d) różnica symetryczna
+      d) boolean, który określa, czy A jest podzbiorem B
+
+6. ZADANIA Z GWIADKĄ
+https://pl.spoj.com/problems/KC003/
+
+7.ZADANIE Z GWIAZDKĄ
+Napisz klasę Punk, która reprezentuje punkt na przetrzeni 2 wymiarowej. Przykład znajdziesz w com.sdacademy.day1.Exercise5
+Napisz metodę, która generuje kolekcję obiektów klasy punkt o losowych współrzędnych.
+Następnie napisz metodę, która oblicza odległość zadanego punktu od początku układu współrzędnych (czyli punktu o współrzędnych 0,0)
+Następnie napisz metodę, która sortuje listę punktów w kolejności od najbliższych do początku układu współrzędnych do najdalszych.
+
