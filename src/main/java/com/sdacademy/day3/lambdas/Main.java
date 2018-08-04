@@ -7,10 +7,6 @@ public class Main {
 
 
 
-        MyConcerter myConcerter = new MyConcerter(input -> "to jest moj int"+input);
-
-
-
 
 
     }

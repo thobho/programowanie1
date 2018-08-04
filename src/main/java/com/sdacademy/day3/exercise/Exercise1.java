@@ -29,8 +29,8 @@ public class Exercise1 {
         petMap.put(new Pet("Dodo", 7, false), new Person("Magda", 19, true));
         petMap.put(new Pet("Niemamimienia", 9, false), new Person("Basia", 19, true));
 
-        Predicate<Person> agePersonPredicate = person -> person.getAge() > 18;
-        Predicate<Person> namePersonPredicate = person -> person.getName().charAt(0) == 'A';
+//        Predicate<Person> agePersonPredicate = person -> person.getAge() > 18;
+//        Predicate<Person> namePersonPredicate = person -> person.getName().charAt(0) == 'A';
 
         Set<Person> people = personsWithOnePet(petMap);
 

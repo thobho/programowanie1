@@ -1,0 +1,26 @@
+0. Mamy dany ciąg binarny (złożony z 0 i 1). Jaki jest najdłuższy podciąg jedynek w danym ciągu?
+
+1. Napisz program, który koduje Stringi za pomocą szyfru Cezara. Skorzystaj z tablicy ASCI, aby dowiedzieć się jakie liczby
+są podporządkowane znakom. Obsłuż przypadki, że liczba, o którą przesuwana jest odczyt znaków wykracza poza zakres
+sensownych znaków, które chcesz kodować.
+
+//https://pl.spoj.com/problems/JSZYCER/
+https://www.asciitable.com/
+
+2. Dwa króle
+Na ile sposobów można ustawić na szachownicy 2 króle:
+białego i czarnego tak aby ich ustawienie było zgodne z przepisami gry w szachy (króle nie mogą stanąć na sąsiadujących polach).
+
+3. Mamy dany zbiór plików, które zawierają jednoliniowe rekordy z danymi. Każdy rekord na samym początku zawiera numer porządkowy.
+Zakładamy, że dane numery porządkowe są wymieszane pomiędzy plikami.
+Napisz program, kosolowy, który przyjmuje jako parametry ścieżki do tych plików tekstowych, i łączy je w jeden plik wynikowy
+z posegregowanymi rekordami. Obsłuż wyjątki.
+
+4. W pakiecie *.day5.heap znajdziesz implementację sterty MaxIntHeap, która przetrzymuje liczby całkowite w pożadku malejącym.
+Przepisz tą klasę, tak aby mogła ona przetrztmywać obiekty każdego typu, które implementują Comparable (żeby była sparametryzowana typem).
+Opcjonalnie klasa Heap może w konstruktorze przyjmować Comparator, ktory będzie mówił ustalał warunek kopca.
+
+5. W pakiecie *.day4.tree znajduje się niedokończona implementacja drzewa binarnego.
+	3.1 Znajduje się tam metoda getMin(). Napisz analogiczną metodę getMax()
+	3.2 Znajduje się tam metoda, printPreOrder - zaimplementuj analogiczne metody printInOrder oraz printPostOrder
+	3.3 contains - sprawdzanie, czy w drzewie znajduje się węzeł z podaną wartością.

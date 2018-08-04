@@ -1,6 +1,6 @@
 package com.sdacademy.day3.lambdas;
 
-import org.apache.commons.math3.primes.Primes;
+
 
 public class LambdasExample {
 
@@ -16,7 +16,7 @@ public class LambdasExample {
 
 
     public static void main(String[] args) {
-        Primes.isPrime(12);
+
         numberPrinter(myFunction, 2);
         numberPrinter(myAnotherFunction, 2);
 

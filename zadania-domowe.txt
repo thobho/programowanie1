@@ -13,7 +13,7 @@ Aby zwrócić 2 wartości z funkcji możesz zwrócić je w formie tablicy dwuele
 parę o nazwie Pair.
 ========================================================================================================================
 
-4. Klasę StackArray, która będzie symulowac działanie stosu. Elementy stosu niech będą przetrzymywane w tablicy.
+4. Napisz klasę StackArray, która będzie symulowac działanie stosu. Elementy stosu niech będą przetrzymywane w tablicy.
 Załóżmy, że stos ma określoną maksymalną liczbę elementów. Jeżli stos jest pełny, to dodanie kolejnego elementu powoduje
 usunięcie elementu, który zajduje się na samym "spodzie" stosu. Jest to tak zwany "stos tonący".
 
