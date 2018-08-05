@@ -1,9 +1,7 @@
 package com.sdacademy.day4.exercises.linessegregator;
 
 import java.awt.*;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.Serializable;
+import java.io.*;
 import java.util.*;
 import java.util.List;
 import java.util.concurrent.*;
@@ -12,13 +10,25 @@ import java.util.stream.Stream;
 
 public class FileLoader {
     private Scanner scanner;
+    public static String DEFAULT_FILEPATH;
+    private Properties properties;
 
+    public FileLoader() {
+        this.properties = new Properties();
+        File props = new File("props.properties");
+        try {
+            this.properties.load(new FileReader(props));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        DEFAULT_FILEPATH = properties.getProperty("outputFile");
+    }
 
-    void readFile(String filePath){
+    void readFile(String filePath) {
         File loadedFile = new File(filePath);
         try {
             scanner = new Scanner(loadedFile);
-            while (scanner.hasNext()){
+            while (scanner.hasNext()) {
                 System.out.println(scanner.nextLine());
             }
         } catch (FileNotFoundException e) {
@@ -26,12 +36,12 @@ public class FileLoader {
         }
     }
 
-    private Person readPersonFromFile(String filePath){
+    private Person readPersonFromFile(String filePath) {
         File loadedFile = new File(filePath);
         Person person = null;
         try {
             scanner = new Scanner(loadedFile);
-            while (scanner.hasNext()){
+            while (scanner.hasNext()) {
                 String personString = scanner.nextLine();
                 String[] split = personString.split(",");
 
@@ -48,12 +58,12 @@ public class FileLoader {
         return person;
     }
 
-    private List<Person> readPersonsFromFile(String filePath){
+    private List<Person> readPersonsFromFile(String filePath) {
         File loadedFile = new File(filePath);
-        List<Person> personList  = new ArrayList<>();
+        List<Person> personList = new ArrayList<>();
         try {
             scanner = new Scanner(loadedFile);
-            while (scanner.hasNext()){
+            while (scanner.hasNext()) {
                 String personString = scanner.nextLine();
                 String[] split = personString.split(",");
                 int personId = Integer.parseInt(split[0]);
@@ -69,13 +79,13 @@ public class FileLoader {
         return personList;
     }
 
-    public List<Person> readFromFiles(List<String> filePaths){
+    public List<Person> readFromFiles(List<String> filePaths) {
 //        List<Person> collect = filePaths.stream()
 //                .flatMap(path -> readPersonsFromFile(path).stream())
 //                .collect(Collectors.toList());
 
         List<Person> result = new ArrayList<>();
-        for (String path:filePaths) {
+        for (String path : filePaths) {
             List<Person> people = readPersonsFromFile(path);
             result.addAll(people);
 
@@ -85,10 +95,21 @@ public class FileLoader {
 
     }
 
+    private static void writeToFile(String outputFilePath, List<Person> personList) {
+        try {
+            FileWriter fileWriter = new FileWriter(outputFilePath);
+            for (Person p : personList) {
+                fileWriter.write(p.toCsvString());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static void main(String[] args) {
         FileLoader fileLoader = new FileLoader();
         //fileLoader.readFile("csvdata/test.csv");
-       // Person person = fileLoader.readPersonFromFile("csvdata/test.csv");
+        // Person person = fileLoader.readPersonFromFile("csvdata/test.csv");
 //        List<Person> people = fileLoader.readPersonsFromFile("csvdata/test.csv");
 
 
@@ -98,13 +119,5 @@ public class FileLoader {
 
     }
 
-
-
-    private static class CallableTutorial implements Callable<Integer>{
-        @Override
-        public Integer call() throws Exception {
-            return 2;
-        }
-    }
 
 }

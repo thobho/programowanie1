@@ -2,8 +2,10 @@ package com.sdacademy.day4.exercises.linessegregator;
 
 import java.util.Objects;
 
-public class Person implements Comparable<Person>{
+public class Person implements Comparable<Person> {
 
+    public static final String FORMAT = "Mój test to %s, następny test to %s, a liczba to" +
+            "moj liczba %d";
     private int id;
     private String name;
     private String secondName;
@@ -64,6 +66,10 @@ public class Person implements Comparable<Person>{
                 '}';
     }
 
+    public String toCsvString() {
+        return String.format("%d,%s,%s,%f", this.id, this.name, this.secondName, this.account);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -78,5 +84,15 @@ public class Person implements Comparable<Person>{
     @Override
     public int hashCode() {
         return Objects.hash(id, name, secondName, account);
+    }
+
+    public static void main(String[] args) {
+
+
+        String test = "TEST";
+        String drugiTest = "asdasdasd";
+        int a = 2;
+
+        System.out.println(String.format(FORMAT, test, drugiTest, a));
     }
 }
