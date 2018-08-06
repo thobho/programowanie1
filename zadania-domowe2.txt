@@ -1,0 +1,29 @@
+Zbiory
+
+1. Napisz trzy metody, których parametrami są dwa zbiory A oraz B(java.util.Set) natomiast wartościami zwracanymi są:
+    a) suma zbiorów
+    b) iloczyn zbiorów
+    c) różnica zbiorów
+    d) różnica symetryczna
+    d) boolean, który określa, czy A jest podzbiorem B
+
+------------------------------------------------------------------------------------------------------------------------
+
+Mapy
+
+2.W klasie com.sdacademy.day3.exercise.Exercise1 znajsziesz przykładową mapę. Zaimplementuj metody, które znajdą w tej mapie i wyświetlą:
+    -> Zwierzęta wszystkich pełnoletnich właścicieli.
+    -> Niebezpieczne zwierzęta młodsze niż 6.
+    -> Właścicieli, którzy mają tylko jedno zwierze.
+    -> Właściciela, który ma najwięcej zwierząt.
+    -> Sumę wag wszystkich zwierząt, które nie są niebezpieczne
+    -> Najciężejsz niebezpieczne zwierzę i jego właściciela.
+    -> Proporcję niebezpiecznych zwierząt do bezpiecznych.
+
+3. Zapimlementuj program (konsolowy lub graficzny) o nazwie Książka telefoniczna. W którym użytkownik będzie mógł:
+    a) dodać nowy kontakt
+    b) usunąć kontakt,
+    c) wyszukiwać kontatky po fragmencie nazwy
+    d) wyświetlić wszystkie kontakty
+
+    Dane mają być zapisane w pliku.

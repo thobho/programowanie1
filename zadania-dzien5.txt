@@ -1,3 +1,6 @@
 0. Napisaliśmy już dużą cześć programu, który, segreguje linie rekordy plików. Napiszmy ostatnią metodę, która wyeksportuje nam dane
 do pliku wynikowego.
+
+
+
 1. Zaimplementuj algorytm rozdawania kart dla graczy. *.day5.deckofcards

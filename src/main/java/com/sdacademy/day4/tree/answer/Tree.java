@@ -1,5 +1,10 @@
 package com.sdacademy.day4.tree.answer;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.LinkedList;
+
 public class Tree<T extends Comparable<T>> {
     private TreeNode<T> root;
 
@@ -94,16 +99,25 @@ public class Tree<T extends Comparable<T>> {
 
     private void printRec(TreeNode currentNode) {
         if (currentNode != null) {
-            System.out.println(currentNode);
-            if (currentNode.getLeft() != null) {
 
+            //print left
+            if (currentNode.getLeft() != null) {
                 printRec(currentNode.getLeft());
             }
+
+            //print actual
+            System.out.println(currentNode);
+
+            //print right
             if (currentNode.getRight() != null) {
                 printRec(currentNode.getRight());
             }
 
         }
-
+        LinkedList<Integer> numbers = new LinkedList<>();
+        numbers.iterator();
+        numbers.descendingIterator();
     }
+
+
 }

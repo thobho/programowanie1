@@ -101,6 +101,7 @@ public class FileLoader {
             for (Person p : personList) {
                 fileWriter.write(p.toCsvString());
             }
+            fileWriter.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -115,6 +116,7 @@ public class FileLoader {
 
         List<Person> people = fileLoader.readFromFiles(Arrays.asList(args));
         people.forEach(person -> System.out.println(person));
+        writeToFile(DEFAULT_FILEPATH, people);
 
 
     }

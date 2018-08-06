@@ -67,7 +67,7 @@ public class Person implements Comparable<Person> {
     }
 
     public String toCsvString() {
-        return String.format("%d,%s,%s,%f", this.id, this.name, this.secondName, this.account);
+        return String.format("%d,%s,%s,%f%n", this.id, this.name, this.secondName, this.account);
     }
 
     @Override

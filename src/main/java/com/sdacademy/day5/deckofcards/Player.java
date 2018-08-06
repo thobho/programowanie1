@@ -1,5 +1,6 @@
 package com.sdacademy.day5.deckofcards;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Player {
@@ -8,6 +9,11 @@ public class Player {
 
     public Player(String name) {
         this.name = name;
+        this.hand = new ArrayList<>();
+    }
+
+    public void getCard(Card card){
+        this.hand.add(card);
     }
 
     public List<Card> getHand() {
