@@ -1,11 +1,16 @@
 package com.sdacademy.day4.streams;
 
+import java.math.BigDecimal;
 import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.function.Supplier;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
+
+import static java.util.stream.Collectors.*;
 
 public class StreamTutorial {
     public static void main(String[] args) {
@@ -82,6 +87,44 @@ public class StreamTutorial {
 //    }
 
 
+    private void streamCreations() {
+
+        //generator
+        Supplier<UUID> randomUUIDSupplier = UUID::randomUUID;
+        Stream<UUID> infiniteStreamOfRandomUUID = Stream.generate(randomUUIDSupplier).limit(19);
+
+
+
+        //builder
+
+        Stream.Builder<Circle> builder = Stream.builder();
+
+        Map<String, List<Circle>> collect = builder
+                .add(Circle.createRandomCircle())
+                .add(Circle.createRandomCircle())
+                .add(Circle.createRandomCircle())
+                .build()
+                .collect(Collectors.groupingBy(Circle::getColor));
+
+
+        Stream<BigDecimal> s = Stream.iterate(
+                BigDecimal.ONE, bigDecimal ->
+                        bigDecimal.add(BigDecimal.ONE))
+                .limit(10).peek(System.out::println);
+
+
+        Stream<Circle> iterate = Stream.iterate(new Circle(1, 1), seedCircle -> new Circle(seedCircle.x + 1, seedCircle.y + 1));
+
+
+        String reduce = Stream.of("test", "noga", "napis").reduce("Start", (a, b) -> a.toUpperCase() + b);
+
+
+        IntSummaryStatistics stats = s.collect(Collectors.summarizingInt(BigDecimal::intValue));
+        System.out.println(stats);
+
+    }
+
+
     public static class Circle implements Comparable<Circle> {
 
         private static final String[] COLORS = {"red", "green", "blue"};
@@ -96,6 +139,10 @@ public class StreamTutorial {
             this.x = x;
             this.y = y;
             this.r = r;
+        }
+
+        public Circle(double x, double y) {
+            this("red", x, y, 1);
         }
 
         @Override
@@ -139,6 +186,10 @@ public class StreamTutorial {
         public static Circle createRandomCircle() {
             Random random = new Random();
             return new Circle(COLORS[random.nextInt(3)], random.nextGaussian(), random.nextGaussian(), random.nextGaussian());
+        }
+
+        public static List<Circle> createRandomCircles(int n) {
+            return IntStream.range(0, n).mapToObj(i -> createRandomCircle()).collect(toList());
         }
 
         @Override

@@ -1,0 +1,2 @@
+0. Stwórz TreeMapę obiektów, gdzie kluczem będzie obiekty typu Punkt(x,y) natomiast wartością będzie obiekty typku Circle(r, color).
+Klasa Punkt musi implementować Comparable. W
