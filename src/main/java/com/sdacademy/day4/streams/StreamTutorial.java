@@ -86,13 +86,27 @@ public class StreamTutorial {
 //        }
 //    }
 
+    class SizePredicate implements Predicate<Circle>{
+        @Override
+        public boolean test(Circle circle) {
+            return circle.r > 0.5;
+        }
+    }
+
 
     private void streamCreations() {
+
+        List<Circle> circles = Arrays.asList(Circle.createRandomCircle(), Circle.createRandomCircle());
+        List<String> collect1 = circles.stream()
+                .filter(circle -> circle.r > 0.5)
+                .map(circle -> circle.getColor())
+                .collect(toList());
+
+
 
         //generator
         Supplier<UUID> randomUUIDSupplier = UUID::randomUUID;
         Stream<UUID> infiniteStreamOfRandomUUID = Stream.generate(randomUUIDSupplier).limit(19);
-
 
 
         //builder
